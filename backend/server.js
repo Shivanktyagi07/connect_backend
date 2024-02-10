@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 //List of 5 jokes:
-app.get('/jokes', (req, res)=>{
+app.get('/api/jokes', (req, res)=>{
    const jokes = [
     {
         id: 1,
@@ -29,6 +29,11 @@ app.get('/jokes', (req, res)=>{
         id: 4,
        title: 'fourth joke',
        content: 'this of fouth joke'
+     },
+     {
+        id:5,
+        title: 'fifthe joke',
+        content: 'this is fifth joke'
      }
    ];
    res.send(jokes)
